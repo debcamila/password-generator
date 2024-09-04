@@ -1,5 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./partials/variables";
+@import "./base/base";
+@import "./components/header";
+@import "./layout/layout";

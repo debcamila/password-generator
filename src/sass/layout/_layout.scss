@@ -1,0 +1,23 @@
+.container {
+  width: 80%;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: $color-white;
+}
+
+h1 {
+  font-family: $roboto-mono;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42.2px;
+}
+
+h2 {
+  font-family: $roboto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.13px;
+}
