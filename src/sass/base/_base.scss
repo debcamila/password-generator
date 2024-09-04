@@ -8,9 +8,13 @@ body {
   background-color: $background-primary;
   color: $color-white;
   font-family: $roboto;
-  display: flex;
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
+  padding: 80px 35px;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-family: $roboto;
 }

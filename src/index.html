@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
     />
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
-
     <title>Gerador de senhas</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -21,6 +20,35 @@
         Gere instantaneamente uma senha aleatória e segura
       </p>
     </header>
+
+    <main class="container">
+      <section class="password">
+        <div class="password_content">
+          <label class="password_label" for="password">senha</label>
+
+          <h3 class="password_generator">Zh0,Sf3So3*</h3>
+        </div>
+
+        <div class="password_actions">
+          <button
+            class="password_buttons"
+            id="copy"
+            title="Copiar senha"
+            aria-label="Copiar senha"
+          >
+            <img alt="Copy's icon" src="./assets/images/copy.svg" />
+          </button>
+          <button
+            class="password_buttons"
+            id="refresh"
+            title="Gerar uma nova senha"
+            aria-label="Gerar uma nova senha"
+          >
+            <img alt="Refresh's icon" src="./assets/images/refresh-cw.svg" />
+          </button>
+        </div>
+      </section>
+    </main>
 
     <script src="js/scripts.js"></script>
   </body>
