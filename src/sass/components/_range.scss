@@ -1,0 +1,37 @@
+.bar_strength {
+  background-color: $background-secondary;
+  height: 32px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.fill_strength {
+  background-color: transparent;
+  height: 32px;
+
+  &.strength_strong {
+    background-color: $color-strong;
+    width: 100%;
+  }
+
+  &.strength_average {
+    background-color: $color-average;
+    width: 63.63%;
+  }
+
+  &.strength_weak {
+    background-color: $color-weak;
+    width: 23.23%;
+  }
+}
+
+.legend_strength {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: $color-purple-light-2;
+  font-family: $roboto;
+  font-weight: $font-weight-500;
+  line-height: $line-height-23;
+}

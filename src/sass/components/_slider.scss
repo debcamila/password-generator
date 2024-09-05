@@ -1,0 +1,16 @@
+.password_number {
+  background: $background-secondary;
+  border: 1px solid $color-purple;
+  padding: 12px;
+  width: 85.9px;
+  height: 55px;
+  font-size: 24px;
+  font-weight: $font-weight-500;
+  color: $color-purple-light-2;
+  line-height: $line-height-28;
+  margin-top: 24px;
+}
+
+input[type="range"] {
+  accent-color: $color-white;
+}

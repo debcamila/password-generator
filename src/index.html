@@ -26,15 +26,15 @@
         <div class="password_content">
           <label class="password_label" for="password">senha</label>
 
-          <h3 class="password_generator">Zh0,Sf3So3*</h3>
+          <h3 class="password_generator">--</h3>
         </div>
 
         <div class="password_actions">
           <button
             class="password_buttons"
             id="copy"
-            title="Copiar senha"
-            aria-label="Copiar senha"
+            title="Copiar senha para a área de transferência"
+            aria-label="Copiar senha para a área de transferência"
           >
             <img alt="Copy's icon" src="./assets/images/copy.svg" />
           </button>
@@ -49,14 +49,100 @@
         </div>
       </section>
 
+      <section class="customize">
+        <div class="customize_all">
+          <h2>Personalize sua senha</h2>
+
+          <div class="customize_all_range">
+            <div class="customize_range">
+              <span class="customize_subtitle">Número de caracteres</span>
+              <input
+                id="password-range"
+                class="password_range"
+                type="range"
+                min="6"
+                max="18"
+                value="12"
+                step="1"
+                aria-label="Mova o cursor para alterar o número de caracteres"
+              />
+              <input
+                id="password-number"
+                class="password_number"
+                type="number"
+                min="6"
+                max="18"
+                value="12"
+                aria-label="Número de caracteres"
+                readonly
+              />
+            </div>
+
+            <div class="customize_range checkbox">
+              <span class="customize_subtitle">Características da senha</span>
+              <label for="uppercase" class="checkbox_label">
+                <input
+                  type="checkbox"
+                  id="uppercase"
+                  class="checkbox_input"
+                  name="uppercase"
+                  checked
+                />
+                <span class="checkmark"></span>
+                Letras maiúsculas
+              </label>
+
+              <label for="lowercase" class="checkbox_label">
+                <input
+                  type="checkbox"
+                  id="lowercase"
+                  name="lowercase"
+                  checked
+                />
+                <span class="checkmark"></span>
+                Letras minúsculas
+              </label>
+
+              <label for="numbers" class="checkbox_label">
+                <input type="checkbox" id="numbers" name="numbers" />
+                <span class="checkmark"></span>
+                Números
+              </label>
+
+              <label for="symbols" class="checkbox_label">
+                <input type="checkbox" id="symbols" name="symbols" />
+                <span class="checkmark"></span>
+                Símbolos
+              </label>
+            </div>
+
+            <div class="customize_range strength">
+              <span class="customize_subtitle">Força da senha</span>
+              <div class="bar_strength">
+                <div class="fill_strength"></div>
+              </div>
+              <div class="legend_strength">
+                <span>Fraca</span>
+                <span>Média</span>
+                <span>Forte</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <button
         class="btn-copy-bottom"
         id="copy-bottom"
-        title="Copiar senha"
-        aria-label="Copiar senha"
+        title="Copiar senha para a área de transferência"
+        aria-label="Copiar senha para a área de transferência"
       >
         Copiar senha
       </button>
+
+      <div id="toast" class="custom_toast">
+        Senha copiada para a área de transferência!
+      </div>
     </main>
 
     <script src="js/scripts.js"></script>
